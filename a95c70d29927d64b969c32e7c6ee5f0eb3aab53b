@@ -1,0 +1,56 @@
+EchoPOC/ContentView.swift
+  43c25b454a199d59 7,10-60
+  b40b4b965be51376 1-6,8-9,61-116
+EchoPOC/Info.plist
+  43c25b454a199d59 4
+  b40b4b965be51376 1-3,5
+EchoPOC/Assets.xcassets/AccentColor.colorset/Contents.json
+  b40b4b965be51376 1-11
+EchoPOC/Assets.xcassets/Contents.json
+  b40b4b965be51376 1-6
+EchoPOC/EchoPOCApp.swift
+  b40b4b965be51376 1-10
+EchoPOC.xcodeproj/project.pbxproj
+  b40b4b965be51376 1-13,15-22,24-37,39-51,53-138,140-269,271-272,275-284,286-299,301-302,305-314,316-325,327-328,331-334,336-337,340-347
+  43c25b454a199d59 14,23,38,52,139,270,273-274,285,300,303-304,315,326,329-330,335,338-339
+EchoPOC/Assets.xcassets/AppIcon.appiconset/Contents.json
+  b40b4b965be51376 1-13
+EchoPOC/SpeechManager.swift
+  43c25b454a199d59 10-25,28-29,32-37,39,44,47,50-64,163,166-248,250-318,330-342,345-351
+  b40b4b965be51376 1-9,26-27,30-31,38,40-43,45-46,48-49,65-162,164-165,249,319-329,343-344,352
+EchoPOC.xcodeproj/xcshareddata/xcschemes/EchoPOC.xcscheme
+  b40b4b965be51376 1-77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.19",
+  "base_commit_sha": "a95c70d29927d64b969c32e7c6ee5f0eb3aab53b",
+  "prompts": {
+    "43c25b454a199d59": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d3713-7180-7160-8ac8-edaa86105905",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Zhiqiang ZHOU <im@strrl.dev>",
+      "messages": [],
+      "total_additions": 293,
+      "total_deletions": 51,
+      "accepted_lines": 287,
+      "overriden_lines": 0
+    },
+    "b40b4b965be51376": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ccb9b1e0-b1c1-497d-a7fa-6592c9bc4eb0",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Zhiqiang ZHOU <im@strrl.dev>",
+      "messages": [],
+      "total_additions": 695,
+      "total_deletions": 0,
+      "accepted_lines": 650,
+      "overriden_lines": 0
+    }
+  }
+}
