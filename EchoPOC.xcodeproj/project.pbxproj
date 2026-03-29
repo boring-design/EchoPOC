@@ -12,6 +12,14 @@
 		AA000003 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000012 /* SpeechManager.swift */; };
 		AA000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000013 /* Assets.xcassets */; };
 		AA000005 /* VoiceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000015 /* VoiceSettingsView.swift */; };
+		BB000001 /* TelegramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000010 /* TelegramConfig.swift */; };
+		BB000002 /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000011 /* TelegramService.swift */; };
+		BB000003 /* TelegramAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000012 /* TelegramAuthView.swift */; };
+		BB000004 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000013 /* ChatListView.swift */; };
+		BB000005 /* WalkieTalkieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000014 /* WalkieTalkieView.swift */; };
+		BB000006 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = BB000020 /* TDLibKit */; };
+		DD000001 /* CloudflareAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD000010 /* CloudflareAIService.swift */; };
+		EE000001 /* EdgeTTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000010 /* EdgeTTSService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,13 @@
 		AA000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA000015 /* VoiceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSettingsView.swift; sourceTree = "<group>"; };
 		AA000020 /* EchoPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EchoPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB000010 /* TelegramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramConfig.swift; sourceTree = "<group>"; };
+		BB000011 /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
+		BB000012 /* TelegramAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramAuthView.swift; sourceTree = "<group>"; };
+		BB000013 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		BB000014 /* WalkieTalkieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkieTalkieView.swift; sourceTree = "<group>"; };
+		DD000010 /* CloudflareAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareAIService.swift; sourceTree = "<group>"; };
+		EE000010 /* EdgeTTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeTTSService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB000006 /* TDLibKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +66,13 @@
 				AA000011 /* ContentView.swift */,
 				AA000012 /* SpeechManager.swift */,
 				AA000015 /* VoiceSettingsView.swift */,
+				BB000010 /* TelegramConfig.swift */,
+				BB000011 /* TelegramService.swift */,
+				BB000012 /* TelegramAuthView.swift */,
+				BB000013 /* ChatListView.swift */,
+				BB000014 /* WalkieTalkieView.swift */,
+				DD000010 /* CloudflareAIService.swift */,
+				EE000010 /* EdgeTTSService.swift */,
 				AA000013 /* Assets.xcassets */,
 				AA000014 /* Info.plist */,
 			);
@@ -80,6 +103,9 @@
 			dependencies = (
 			);
 			name = EchoPOC;
+			packageProductDependencies = (
+				BB000020 /* TDLibKit */,
+			);
 			productName = EchoPOC;
 			productReference = AA000020 /* EchoPOC.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +134,9 @@
 				Base,
 			);
 			mainGroup = AA000040;
+			packageReferences = (
+				BB000030 /* XCRemoteSwiftPackageReference "TDLibKit" */,
+			);
 			productRefGroup = AA000042 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +166,13 @@
 				AA000002 /* ContentView.swift in Sources */,
 				AA000003 /* SpeechManager.swift in Sources */,
 				AA000005 /* VoiceSettingsView.swift in Sources */,
+				BB000001 /* TelegramConfig.swift in Sources */,
+				BB000002 /* TelegramService.swift in Sources */,
+				BB000003 /* TelegramAuthView.swift in Sources */,
+				BB000004 /* ChatListView.swift in Sources */,
+				BB000005 /* WalkieTalkieView.swift in Sources */,
+				DD000001 /* CloudflareAIService.swift in Sources */,
+				EE000001 /* EdgeTTSService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB000030 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftgram/TDLibKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = "1.5.2-tdlib-1.8.62-0ae923c4";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB000020 /* TDLibKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB000030 /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			productName = TDLibKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA000080 /* Project object */;
 }

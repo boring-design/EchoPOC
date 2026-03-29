@@ -26,15 +26,6 @@ struct ContentView: View {
                 }
                 .frame(maxHeight: 200)
 
-                VStack(spacing: 6) {
-                    Text("TTS Voice")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-
-                    Text(speechManager.selectedVoiceOption()?.name ?? "Auto")
-                        .font(.headline)
-                }
-
                 Spacer()
 
                 pushToTalkButton
@@ -98,6 +89,7 @@ struct ContentView: View {
         switch speechManager.status {
         case .idle: .secondary
         case .listening: .green
+        case .processing: .yellow
         case .speaking: .blue
         }
     }
@@ -106,6 +98,7 @@ struct ContentView: View {
         switch speechManager.status {
         case .idle: .blue
         case .listening: .red
+        case .processing: .orange
         case .speaking: .gray
         }
     }

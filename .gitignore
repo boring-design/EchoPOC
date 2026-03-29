@@ -7,3 +7,6 @@ xcuserdata/
 
 # Swift Package Manager build output
 .build/
+
+# Telegram API credentials
+EchoPOC/TelegramConfig.swift
