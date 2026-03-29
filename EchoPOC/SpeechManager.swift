@@ -127,6 +127,13 @@ final class SpeechManager: NSObject, ObservableObject {
 
         let request = SFSpeechAudioBufferRecognitionRequest()
         request.shouldReportPartialResults = true
+        request.taskHint = .dictation
+        request.addsPunctuation = true
+        request.contextualStrings = [
+            "Echo",
+            "Yue",
+            "Ava"
+        ]
         recognitionRequest = request
 
         recognitionTask = speechRecognizer.recognitionTask(with: request) { [weak self] result, error in
