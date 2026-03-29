@@ -1,0 +1,9 @@
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+
+# Local macOS noise
+.DS_Store
+
+# Swift Package Manager build output
+.build/
