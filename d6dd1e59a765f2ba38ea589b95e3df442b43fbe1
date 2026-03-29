@@ -1,0 +1,75 @@
+EchoPOC/VoiceSettingsView.swift
+  5a1317a605a761e0 5-7,9-15,18-39,41-43,45-58,60,63-73,76-83,86-103,106-110,112,116-123,125-128,131-136,138-142,144-145,148,153-155
+EchoPOC/EdgeTTSService.swift
+  5a1317a605a761e0 1-195
+EchoPOC/ChatListView.swift
+  5a1317a605a761e0 1-67
+EchoPOC/WalkieTalkieView.swift
+  5a1317a605a761e0 1-179
+EchoPOC/CloudflareAIService.swift
+  5a1317a605a761e0 1-195
+.gitignore
+  5a1317a605a761e0 10-12
+EchoPOC/SpeechManager.swift
+  5a1317a605a761e0 6,12-13,17-18,20-25,29-33,35-36,40-43,50,56,60-61,64-82,84,86,91-92,94-95,97,99-102,106,108-111,114-118,121-125,128,131,133-134,138-143,145,147-150,155-158,160-163,165-169,171-172,174-175,178-179,183,185-188
+  b1992b36512b6eae 112
+PLAN.md
+  43c25b454a199d59 1-112
+EchoPOC/TelegramAuthView.swift
+  5a1317a605a761e0 1-139
+EchoPOC/EchoPOCApp.swift
+  5a1317a605a761e0 5-7,10-48
+EchoPOC/TelegramService.swift
+  5a1317a605a761e0 1-244
+EchoPOC.xcodeproj/project.pbxproj
+  b1992b36512b6eae 234,290
+  5a1317a605a761e0 15-22,33-39,47,69-75,106-108,137-139,169-175,381-399
+EchoPOC/ContentView.swift
+  5a1317a605a761e0 92,101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "d6dd1e59a765f2ba38ea589b95e3df442b43fbe1",
+  "prompts": {
+    "43c25b454a199d59": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d3713-7180-7160-8ac8-edaa86105905",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Zhiqiang ZHOU <im@strrl.dev>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 112,
+      "overriden_lines": 0
+    },
+    "5a1317a605a761e0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "45bd4d99-d9b5-4185-add9-f141c9cd7121",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Zhiqiang ZHOU <im@strrl.dev>",
+      "messages": [],
+      "total_additions": 1796,
+      "total_deletions": 889,
+      "accepted_lines": 1398,
+      "overriden_lines": 0
+    },
+    "b1992b36512b6eae": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "09d5c9b9-b535-4da5-9595-95d5f1e115a5",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Zhiqiang ZHOU <im@strrl.dev>",
+      "messages": [],
+      "total_additions": 139,
+      "total_deletions": 66,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}
