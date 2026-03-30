@@ -3,6 +3,7 @@ import TDLibKit
 
 enum TelegramAuthState: Equatable {
     case initializing
+    case configurationMissing
     case waitingPhoneNumber
     case waitingCode
     case waitingPassword(hint: String)
@@ -54,6 +55,10 @@ final class TelegramService: ObservableObject {
 
     func start() {
         guard client == nil else { return }
+        guard TelegramConfig.isConfigured else {
+            authState = .configurationMissing
+            return
+        }
         client = clientManager.createClient { [weak self] data, client in
             self?.handleUpdate(data: data, client: client)
         }
@@ -62,6 +67,7 @@ final class TelegramService: ObservableObject {
     // MARK: - Auth Actions
 
     func sendPhoneNumber(_ phone: String) async throws {
+        guard TelegramConfig.isConfigured else { return }
         guard let client else { return }
         try await client.setAuthenticationPhoneNumber(
             phoneNumber: phone,
@@ -70,11 +76,13 @@ final class TelegramService: ObservableObject {
     }
 
     func sendAuthCode(_ code: String) async throws {
+        guard TelegramConfig.isConfigured else { return }
         guard let client else { return }
         try await client.checkAuthenticationCode(code: code)
     }
 
     func sendPassword(_ password: String) async throws {
+        guard TelegramConfig.isConfigured else { return }
         guard let client else { return }
         try await client.checkAuthenticationPassword(password: password)
     }
@@ -180,6 +188,11 @@ final class TelegramService: ObservableObject {
     }
 
     private func configureTdlib(client: TDLibClient) {
+        guard TelegramConfig.isConfigured else {
+            authState = .configurationMissing
+            return
+        }
+
         let dbPath = FileManager.default
             .urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("tdlib")

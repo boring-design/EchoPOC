@@ -24,6 +24,9 @@ struct TelegramAuthView: View {
             case .initializing:
                 ProgressView("Initializing...")
 
+            case .configurationMissing:
+                configurationMissingView
+
             case .waitingPhoneNumber:
                 phoneNumberForm
 
@@ -51,6 +54,14 @@ struct TelegramAuthView: View {
     }
 
     // MARK: - Forms
+
+    private var configurationMissingView: some View {
+        ContentUnavailableView(
+            "Telegram Not Configured",
+            systemImage: "key.fill",
+            description: Text("Set `TELEGRAM_API_ID` and `TELEGRAM_API_HASH` in Info.plist before connecting.")
+        )
+    }
 
     private var phoneNumberForm: some View {
         VStack(spacing: 16) {
